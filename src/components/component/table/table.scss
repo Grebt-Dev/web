@@ -1,0 +1,190 @@
+$colorddd: #ddd;
+$align: center;
+$display: flex;
+$colorAA: #6699ff;
+
+.tableContainer {
+  border: 1px solid #dddddd;
+}
+
+.table {
+  &.MuiTable-root {
+    table-layout: auto;
+  }
+}
+
+.tableWrapper {
+}
+
+.table-pagesize {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.clsTableControll {
+  width: 30%;
+  display: $display;
+  justify-content: flex-end;
+  align-items: $align;
+}
+
+.clsStopCheckbox {
+  width: 100%;
+  display: $display;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.selectButton {
+  width: 60px;
+  height: 35px;
+  background-color: $colorAA;
+  border: none;
+  border-radius: 12px;
+  margin-left: 15px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.checkbox {
+  display: flex;
+  justify-content: center;
+}
+
+table td,
+table th {
+  border: 1px solid $colorddd;
+  padding: 8px;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.tbody_tr:hover {
+  background-color: $colorddd;
+  cursor: pointer;
+}
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #fafafa;
+}
+
+.table-pagination {
+  margin: 5px;
+  display: $display;
+  justify-content: $align;
+  align-items: $align;
+}
+
+.prevStrong {
+  display: block;
+  width: 100px;
+  text-align: $align;
+}
+
+.gotopageInput {
+  width: 50px;
+}
+
+.cellDeviceName {
+  &.MuiTypography-root {
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: balck;
+  }
+}
+
+.cellUserName {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  &.MuiTypography-root {
+    font-weight: 700;
+    font-size: 0.85rem;
+  }
+}
+
+.cellEmail {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  &.MuiTypography-root {
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: darkgray;
+  }
+}
+
+.tbody_cell {
+  &.MuiTableCell-root {
+    min-width: 10px;
+    max-width: 150px;
+    border-left: none;
+    border-right: none;
+    padding: 8px;
+  }
+}
+
+.tableHeader {
+  align-items: center;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+
+  &.MuiTableCell-root {
+    padding: 8px;
+  }
+
+  .tableHeaderCell {
+    &.MuiTypography-root {
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+  }
+}
+
+.writedate {
+  &.MuiTypography-root {
+    font-size: 0.85rem;
+  }
+}
+
+.writetime {
+  &.MuiTypography-root {
+    font-size: 0.85rem;
+  }
+}
+
+.userStatusCell {
+  display: flex;
+  align-items: center;
+
+  .userStatus {
+    &.using {
+      background-color: #52c41a;
+      width: 10px;
+      height: 10px;
+      border-radius: 100%;
+    }
+
+    &.notUsing {
+      background-color: lightcoral;
+      width: 10px;
+      height: 10px;
+      border-radius: 100%;
+    }
+  }
+
+  .userStatusLabel {
+    &.MuiTypography-root {
+      padding-left: 7px;
+      font-size: 0.85rem;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+$font-size: 20px;
+$bordercolor: #6699ff;
+$borderRadius: 10px;
+
+.formSearch {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-left: 20px;
+}
+
+.filterinput {
+  &.MuiInputBase-root {
+    font-size: $font-size;
+    width: 100%;
+
+    border-color: $bordercolor;
+    border-radius: $borderRadius;
+  }
+
+  .MuiInputBase-input {
+    width: 300px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}
+
+.filterbutton {
+  &.MuiButtonBase-root {
+    margin-left: 15px;
+  }
+}
